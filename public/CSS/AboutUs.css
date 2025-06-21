@@ -1,0 +1,153 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; 
+            overflow-x: hidden; 
+            min-height: 100vh;
+            display: flex; 
+            flex-direction: column;
+        }
+
+        /* Styling for the main content container */
+        .container {
+            flex-grow: 1;
+            padding: 2rem 1rem;
+            max-width: 1400px;
+            margin: 0 auto; 
+            text-align: center;
+        }
+
+        /* Styling for the main heading */
+        .main-heading {
+            font-size: 3.75rem; 
+            font-weight: 800; 
+            color: #1a202c; 
+            margin-bottom: 2.5rem; 
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        /* Team members grid container */
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2.5rem;
+            justify-items: center; 
+            padding-bottom: 2rem; 
+        }
+
+        /* Individual team member card styling */
+        .team-member {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); 
+            padding: 2rem; 
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            width: 100%; 
+            max-width: 320px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+
+        /* Profile image styling */
+        .profile-image {
+            width: 9.375rem; 
+            height: 9.375rem;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            overflow: hidden; 
+            border: 4px solid #6366f1;
+            box-shadow: 0px 0px 0px 6px rgba(99, 102, 241, 0.3);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Member information styling */
+        .member-info {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .member-info h2 {
+            font-size: 1.5rem;
+            font-weight: 700; 
+            margin-bottom: 0.75rem; 
+            color: #1a202c;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+        }
+
+        .member-info p {
+            font-size: 1rem; 
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            color: #4a5568;
+        }
+
+        /* Email link styling */
+        .member-info .email-link {
+            color: #4F46E5;
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+
+        .member-info .email-link:hover {
+            color: #6366f1;
+            text-decoration: underline; 
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .main-heading {
+                font-size: 3rem;
+            }
+            .team-container {
+                gap: 2rem;
+            }
+            .team-member {
+                max-width: 300px;
+                padding: 1.5rem;
+            }
+            .profile-image {
+                width: 8rem;
+                height: 8rem;
+            }
+            .profile-image {
+                border-width: 3px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-heading {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+            .team-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+            .team-member {
+                max-width: 90%; 
+                padding: 1rem;
+            }
+            .profile-image {
+                width: 7rem; 
+                height: 7rem; 
+                margin-bottom: 1rem;
+            }
+            .member-info h2 {
+                font-size: 1.25rem; 
+                margin-bottom: 0.5rem;
+            }
+            .member-info p {
+                font-size: 0.9rem;
+            }
+        }
