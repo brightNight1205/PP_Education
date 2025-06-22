@@ -1,0 +1,153 @@
+body.app-flex {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the main content container */
+.app-container {
+    flex-grow: 1;
+    padding: 2rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: auto;
+}
+
+/* Styling for the main heading */
+.app-main-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+/* Team members grid container */
+.app-team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row on large screens */
+    gap: 2.5rem;
+    justify-items: center;
+    padding-bottom: 2rem;
+}
+
+/* Individual team member card styling */
+.app-team-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile image styling */
+.app-profile-wrapper {
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border: 4px solid #4F46E5;
+    box-shadow: 0px 0px 0px 6px rgba(99, 102, 241, 0.3);
+}
+
+.app-profile-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Member information styling */
+.app-member-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-member-details h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #1a202c;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.app-text-muted {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: #4a5568;
+}
+
+/* Email link styling */
+.app-email-link {
+    color: #4F46E5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.app-email-link:hover {
+    color: #4F46E5;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .app-main-heading {
+        font-size: 3rem;
+    }
+    .app-team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        gap: 2rem;
+    }
+    .app-team-card {
+        max-width: 300px;
+        padding: 1.5rem;
+    }
+    .app-profile-wrapper {
+        width: 8rem;
+        height: 8rem;
+        border-width: 3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-main-heading {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .app-team-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        gap: 1.5rem;
+    }
+    .app-team-card {
+        max-width: 90%;
+        padding: 1rem;
+    }
+    .app-profile-wrapper {
+        width: 7rem;
+        height: 7rem;
+        margin-bottom: 1rem;
+    }
+    .app-member-details h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .app-text-muted {
+        font-size: 0.9rem;
+    }
+}

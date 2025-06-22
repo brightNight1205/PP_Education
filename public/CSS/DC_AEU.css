@@ -1,0 +1,83 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding-top: 100px;
+    color: #333;
+}
+
+.aeu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 1rem 60px;
+}
+
+.aeu-title {
+    font-size: 2.25rem;
+    color: #4f46e5;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.aeu-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+.aeu-programs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+@media (min-width: 640px) {
+    .aeu-programs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .aeu-programs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .aeu-programs {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.aeu-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.aeu-card img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border-radius: 0.5rem;
+}
+
+.aeu-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    margin: 0;
+}

@@ -1,0 +1,79 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    margin-top: 80px;
+}
+
+.itc-container {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.itc-heading {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #4f46e5;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+}
+
+.itc-heading span {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+}
+
+.itc-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+@media (min-width: 640px) {
+    .itc-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .itc-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+.itc-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 280px;
+    text-align: center;
+}
+
+.itc-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.itc-card h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b5563;
+}

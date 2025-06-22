@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 100px auto 40px auto;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(79, 70, 229, 0.08), 0 1.5px 4px rgba(0,0,0,0.04);
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+form {
+    width: 100%;
+}
+
+.form-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4f46e5;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the asterisk red */
+.form-group label span {
+    color: red;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+/* Inputs, Textarea, and Select styles */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #2d3748;
+    background: #f9fafb;
+    transition: border-color 0.2s;
+    outline: none;
+    margin-bottom: 0.25rem;
+}
+
+/* Custom dropdown styling */
+.form-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+}
+
+/* Focus effect for inputs */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4f46e5;
+    background: #fff;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#description {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #d1d5db;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Error message */
+.error-message {
+    color: #ef4444;
+    font-size: 0.92rem;
+    margin-top: 0.1rem;
+    display: none;
+}
+
+/* Submit button */
+.btn-contact {
+    width: 100%;
+    background: #4f46e5;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.08);
+}
+
+.btn-contact:hover {
+    background: #4338ca;
+}
+
+/* Notification styles */
+.notification {
+    display: none;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.notification.success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1.5px solid #10b981;
+    display: block;
+}
+
+.notification.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1.5px solid #ef4444;
+    display: block;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 1.2rem 0.5rem;
+        margin: 70px 8px 30px 8px;
+    }
+
+    .form-container h2 {
+        font-size: 1.4rem;
+    }
+}

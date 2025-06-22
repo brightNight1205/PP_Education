@@ -1,0 +1,70 @@
+:root {
+    --bs-primary: #4f46e5; /* Deep Indigo */
+    --bs-primary-rgb: 79, 70, 229;
+    --bs-secondary: #6c757d;
+    /* ... other custom colors */
+}
+.bg-primary { background-color: var(--bs-primary) !important; }
+.text-primary { color: var(--bs-primary) !important; }
+/* Add more custom styles for hover effects, etc. */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #4338CA; /* Slightly darker indigo */
+    border-color: #4338CA;
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    transition: all 0.2s ease-in-out;
+}
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Gradient Navbar */
+.navbar-custom-gradient {
+    background: linear-gradient(to right, #4c51bf, #667eea); /* Example gradient */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* More pronounced shadow */
+}
+.navbar-custom-gradient .nav-link,
+.navbar-custom-gradient .navbar-brand {
+    color: white !important;
+}
+.navbar-custom-gradient .nav-link.active,
+.navbar-custom-gradient .nav-link:hover {
+    color: #dbeafe !important; /* Light blue on hover */
+    border-bottom: 2px solid #93c5fd; /* Light blue underline */
+    padding-bottom: calc(var(--bs-navbar-padding-y) - 2px); /* Adjust padding for border */
+}
+.navbar-custom-gradient .navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Makes toggler icon white */
+}
+
+/* User Dropdown Button */
+.navbar-custom-gradient .dropdown-toggle {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease-in-out;
+    backdrop-filter: blur(5px); /* Requires custom CSS for backdrop-filter */
+    -webkit-backdrop-filter: blur(5px);
+}
+.navbar-custom-gradient .dropdown-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white !important;
+}
+.navbar-custom-gradient .dropdown-toggle svg {
+    color: #bfdbfe !important; /* Lighter blue for icon */
+}
+.navbar-custom-gradient .dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5); /* White focus ring */
+}
