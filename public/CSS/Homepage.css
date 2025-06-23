@@ -229,7 +229,7 @@ body {
     align-items: center;
 }
 .university-card-content .university-name {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #2d3748;
     line-height: 1.4;
@@ -242,6 +242,7 @@ body {
     padding: 0 0.5rem;
     box-sizing: border-box;
 }
+
 .university-card-content .university-meta {
     font-size: 0.95rem;
     font-weight: normal;
@@ -270,7 +271,7 @@ body {
     margin-top: auto;
     align-self: center;
     transition: background-color 0.3s ease, color 0.3s ease,
-        border-color 0.3s ease;
+    border-color 0.3s ease;
     pointer-events: auto;
 }
 .university-card-button:hover {
